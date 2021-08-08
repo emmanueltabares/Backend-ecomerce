@@ -14,9 +14,10 @@ router.get('/listar', (req, res) => {
       res.status(400).json({ error: "No hay productos cargados" })
 })
 
+
 router.get('/vista', (req, res) => {
     if(getProducts)
-        res.render('main', { getProducts })
+        res.render('index.pug', { getProducts })
 })
 
 router.get('/listar/:id', (req, res) => {
@@ -49,5 +50,6 @@ router.delete('/borrar/:id', (req, res) => {
       res.status(400).json({ error: "El producto es inexistente", producto: id })
     }
 })
+
 
 export default router;
