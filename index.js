@@ -16,7 +16,7 @@ server.on("error", (error) =>
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 const viewsFolderPath = path.resolve(__dirname, './views');
 app.set('views', viewsFolderPath)
 

@@ -17,7 +17,7 @@ router.get('/listar', (req, res) => {
 
 router.get('/vista', (req, res) => {
     if(getProducts)
-        res.render('index.pug', { getProducts })
+        res.render('index.ejs', { getProducts })
 })
 
 router.get('/listar/:id', (req, res) => {
