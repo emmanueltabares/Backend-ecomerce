@@ -8,9 +8,15 @@ const router = express.Router();
 
 router.get('/listar', (req, res) => {
     if (getProducts.length !== 0) 
-      res.json({ productos: getProducts })
+        res.json(getProducts)
+        
     else
       res.status(400).json({ error: "No hay productos cargados" })
+})
+
+router.get('/vista', (req, res) => {
+    if(getProducts)
+        res.render('main', { getProducts })
 })
 
 router.get('/listar/:id', (req, res) => {
@@ -38,7 +44,7 @@ router.delete('/borrar/:id', (req, res) => {
     const id = parseInt(req.params.id);
     try{
       const productId = products.deleteProduct(id)
-      res.json({ id , status: "Se elimino correctamente" })
+      res.json({ productId , status: "Se elimino correctamente" })
     } catch {
       res.status(400).json({ error: "El producto es inexistente", producto: id })
     }

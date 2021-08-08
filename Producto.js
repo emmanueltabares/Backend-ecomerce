@@ -21,11 +21,10 @@ export default class Producto {
 
     deleteProduct = (id) => {
         
-        const findId = Number(id)
-        const deleteProduct = this._products.find((product) => product.id == findId);
-        this._products = this._products.filter((product) => product.id !== findId); 
+        const deleteProduct = this._products.find((product) => product.id == parseInt(id));
+        this._products = this._products.filter((product) => product.id !== parseInt(id)); 
 
-        return deleteProduct;
+        return this._products;
     }
 
     putProduct = (id) => {
