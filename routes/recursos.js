@@ -6,6 +6,10 @@ const getProducts = products.getProducts();
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.render('index.pug')
+})
+
 router.get('/listar', (req, res) => {
     if (getProducts.length !== 0) 
         res.json(getProducts)
@@ -17,7 +21,7 @@ router.get('/listar', (req, res) => {
 
 router.get('/vista', (req, res) => {
     if(getProducts)
-        res.render('index.ejs', { getProducts })
+        res.render('index.pug', { getProducts })
 })
 
 router.get('/listar/:id', (req, res) => {

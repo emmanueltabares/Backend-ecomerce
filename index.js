@@ -1,22 +1,24 @@
 import express from "express";
 import router from "./routes/recursos";
 import path from "path";
+import * as http from "http";
+import io from "socket.io";
+import Producto from "./Producto";
 
+//OBTENIENDO DATOS DE PRODUCTOS
+const products = new Producto();
+const getProducts = products.getProducts();
+
+//INICIALIZANDO EXPRESS
 const port = 3000;
 const app = express();
 
-const server = app.listen(port, () => {
-  console.log("Servidor iniciado en puerto ", port);
-});
-
-server.on("error", (error) =>
-  console.log("Ocurrió un problema en el servidor ", error)
-);
-
+//ESTABLECIENDO CARPETA PUBLIC
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.set('view engine', 'ejs');
+//CONFIGURANDO MOTOR DE PLANTILLAS
+app.set('view engine', 'pug');
 const viewsFolderPath = path.resolve(__dirname, './views');
 app.set('views', viewsFolderPath)
 
@@ -24,4 +26,29 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/productos", router);
+
+//INICIANDO SERVER SOCKET.IO
+const myServer = http.Server(app)
+myServer.listen(port, () => console.log("Servidor iniciado en puerto", port))
+const myWSServer = io(myServer);
+
+const arrayProducts = [];
+
+myWSServer.on('connection', (socket) => {
+  console.log("Se ha conectado un cliente");
+  console.log(socket.client.id)
+
+  socket.on('new-product', (data) => {
+    arrayProducts.push(data)
+    socket.emit('message', messages)
+  });
+
+  socket.on('getProducts', (data) => {
+    console.log('ME LLEGO DATA');
+    console.log(data)
+    arrayProducts.push(data)
+    console.log(arrayProducts)
+    myWSServer.emit('products', { arrayProducts });
+  });
+});
 
