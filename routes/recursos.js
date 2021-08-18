@@ -7,7 +7,8 @@ const getProducts = products.getProducts();
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index.pug')
+    if(getProducts)
+        res.render('index', { getProducts })
 })
 
 router.get('/listar', (req, res) => {
@@ -19,10 +20,10 @@ router.get('/listar', (req, res) => {
 })
 
 
-router.get('/vista', (req, res) => {
+/* router.get('/vista', (req, res) => {
     if(getProducts)
         res.render('index.pug', { getProducts })
-})
+}) */
 
 router.get('/listar/:id', (req, res) => {
     const id = req.params.id;
@@ -37,8 +38,7 @@ router.get('/listar/:id', (req, res) => {
 router.post('/guardar', (req, res) => {
     const body = req.body;
     const newProduct = products.addProduct(body.title, body.price, body.thumbnail);
-
-    res.json({ product: newProduct, status: "se agregó correctamente"})
+    res.render('index.pug', { getProducts })
 })
 
 router.put('/actualizar/:id', (req, res) => {

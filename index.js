@@ -10,7 +10,7 @@ const products = new Producto();
 const getProducts = products.getProducts();
 
 //INICIALIZANDO EXPRESS
-const port = 3000;
+const port = 8080;
 const app = express();
 
 //ESTABLECIENDO CARPETA PUBLIC
@@ -39,16 +39,18 @@ myWSServer.on('connection', (socket) => {
   console.log(socket.client.id)
 
   socket.on('new-product', (data) => {
+    console.log(data);
     arrayProducts.push(data)
-    socket.emit('message', messages)
+    console.log(arrayProducts)
+    myWSServer.emit('products', arrayProducts)
   });
 
-  socket.on('getProducts', (data) => {
+ /*  socket.on('getProducts', (data) => {
     console.log('ME LLEGO DATA');
     console.log(data)
     arrayProducts.push(data)
     console.log(arrayProducts)
     myWSServer.emit('products', { arrayProducts });
-  });
+  });  */
 });
 
