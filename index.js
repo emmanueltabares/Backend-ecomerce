@@ -33,6 +33,7 @@ myServer.listen(port, () => console.log("Servidor iniciado en puerto", port))
 const myWSServer = io(myServer);
 
 const arrayProducts = [];
+const messages = [];
 
 myWSServer.on('connection', (socket) => {
   console.log("Se ha conectado un cliente");
@@ -52,5 +53,19 @@ myWSServer.on('connection', (socket) => {
     console.log(arrayProducts)
     myWSServer.emit('products', { arrayProducts });
   });  */
+
+  socket.on('new-message', function (data) {
+    const newMessage = {
+      socketId: socket.client.id,
+      message: data,
+    };
+    console.log(newMessage);
+    messages.push(newMessage);
+    myWSServer.emit('messages', messages);
+  });
+
+  socket.on('askData', (data) => {
+    socket.emit('messages', messages);
+  });
 });
 
