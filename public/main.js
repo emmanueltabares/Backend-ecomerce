@@ -1,52 +1,42 @@
-const socket = io.connect();
+const socket = io();
 
-newProduct = (e) => {
-    e.preventDefault()
-    console.log('EJECUTANDO NEWPRODUCT')
-    const newProduct = {
-        title: document.getElementById('title').value,
-        price: document.getElementById('price').value,
-        thumbnail: document.getElementById('thumbnail').value
+const formMessages = document.getElementById('formMessages')
+const containerMessages = document.getElementById('containerMessages')
+
+let date = new Date();
+let now = date.toLocaleString();
+
+formMessages.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if(email.value && message.value) {
+        let data = {
+            author: {
+                email: email.value,
+                nombre: nombre.value,
+                apellido: apellido.value,
+                alias: alias.value,
+                edad: edad.value,
+                avatar: avatar.value,
+            },
+            text: message.value,
+        }
+
+        console.log(email,nombre)
+        socket.emit('newMessage', data);
+        message.value='';
+        
     }
-
-    socket.emit('new-product', newProduct);
-    return false;
-}
-
-socket.on('products', (data) => {
-    alert(JSON.stringify(data))
-    console.log(data)
-
 });
 
-// Cuando arrancamos pedimos la data que hay actualmente enviando un socket
-socket.emit('askData');
-
-function sendData(e) {
-  const input = document.getElementById('message');
-  socket.emit('new-message', input.value);
-}
-
-function render(data) {
-  const input2 = document.getElementById('username')
-  const html = data
-    .map(function (elem, index) {
-      return `<div>
-                 <strong>Usuario: ${input2.value} => </strong>:
-                 <em>${elem.message}</em>
-        </div>`;
-    })
-    .join(' ');
-
-  document.getElementById('messages').innerHTML = html;
-}
-
-socket.on('messages', function (data) {
-  render(data);
+socket.on('recieveMessage', (msgs) => {
+    console.log(msgs);
 });
- 
 
-
-
-
-
+socket.on('newMessage', (msg) => {
+    let p = document.createElement('p');
+    p.innerHTML = `
+            <span>${msg.author.email}</span>
+            <span>${msg.author.nombre}</span>
+            <span>${msg.text}</span>`;
+    containerMessages.appendChild(p);
+});

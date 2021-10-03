@@ -1,10 +1,15 @@
 import {Router} from 'express';
 import productsRouter from './producto';
 import carritoRouter from './carrito';
+import loginRouter from './login';
+import messagesRouter from './messages'
+import { validateLogIn } from '../middleware/loginUser';
 
 const router = Router();
 
-router.use('/products', productsRouter)
-router.use('/cart', carritoRouter)
+router.use('/products', validateLogIn, productsRouter);
+router.use('/cart', validateLogIn, carritoRouter);
+router.use('/messages', validateLogIn, messagesRouter)
+router.use('/', loginRouter)
 
 export default router;
