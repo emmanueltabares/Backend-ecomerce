@@ -12,9 +12,6 @@ const pass = 1234;
 export const loginUser = (req: Request, res: Response): void => {
 
     const { userName, userPass } = req.body;
-
-    console.log(userName)
-    console.log(userPass)
   
     if (userName == user && pass == userPass) {
 
