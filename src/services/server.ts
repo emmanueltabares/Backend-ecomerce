@@ -5,6 +5,7 @@ import apiRouter from '../routes/index';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import MongoStore from 'connect-mongo';
+import passport from 'passport';
 import 'dotenv/config'
 
 const app = express();
@@ -27,11 +28,16 @@ app.use(
       cookie: { maxAge: timeSession },
       saveUninitialized: true,
       resave: true,
+
       store: MongoStore.create({
         mongoUrl: `mongodb+srv://${process.env.MONGO_ATLAS_USER}:${process.env.MONGO_ATLAS_PASSWORD}@${process.env.MONGO_ATLAS_CLUSTER}/${process.env.MONGO_ATLAS_DB}?retryWrites=true&w=majority`,
       }) 
     })
   );
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use('/api', apiRouter);
 
 app.set('view engine', 'pug');

@@ -20,13 +20,10 @@ head
               label.text-info(for='userPass') Password:
               br
               input#password.form-control(type='number' name='userPass')
-            //.form-group
+            .form-group
               label.text-info(for='remember-me')
-                span Remember me
                 span
-                  input#remember-me(name='remember-me' type='checkbox')
-              br
-
             input.btn.btn-info.btn-md(type='submit' name='submit' value='Login')
-            //#register-link.text-right
-              a.text-info(href='#') Register here
+            
+          form(action="api/signup" method="post") 
+            input.btn.btn-info.btn-md(type='submit' name='submit' value='Singup')

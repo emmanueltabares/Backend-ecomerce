@@ -13,7 +13,7 @@ export const loginUser = (req: Request, res: Response): void => {
 
     const { userName, userPass } = req.body;
   
-    if (userName == user && pass == userPass) {
+    if (userName == user && userPass == pass) {
 
       let session = req.session.loggedIn
       session = true;
@@ -33,8 +33,12 @@ export const loginUser = (req: Request, res: Response): void => {
       else {
         res.json({msg: "Hasta pronto!"})
         setTimeout(() => {
-            res.render('login.pug')
+            res.redirect('login.pug')
         }, 2000);
       }
     });
+  };
+
+  export const singUpUser = (req: Request, res: Response): void => {
+    res.json({ data: { message: 'Registro exitoso' } });
   };
