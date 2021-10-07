@@ -11,13 +11,13 @@ const pass = 1234;
 
 export const loginUser = (req: Request, res: Response): void => {
 
-    const { userName, userPass } = req.body;
+    const { username, password } = req.body;
   
-    if (userName == user && userPass == pass) {
+    if (username == user && password == pass) {
 
       let session = req.session.loggedIn
       session = true;
-        return res.render('index.pug', { userName })
+        return res.render('index.pug', { username })
     
     } else {
       res.status(401).json({
@@ -32,9 +32,6 @@ export const loginUser = (req: Request, res: Response): void => {
       if (err) res.status(500).json({ msg: 'Ocurrió un error' });
       else {
         res.json({msg: "Hasta pronto!"})
-        setTimeout(() => {
-            res.redirect('login.pug')
-        }, 2000);
       }
     });
   };

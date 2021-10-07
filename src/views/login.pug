@@ -13,17 +13,20 @@ head
           form#login-form.form(action='/api/login' method='post')
             h3.text-center.text-info Login
             .form-group
-              label.text-info(for='userName') Username:
+              label.text-info(for='username') Username:
               br
-              input#userName.form-control(type='text' name='userName')
+              input#userName.form-control(type='text' name='username')
             .form-group
-              label.text-info(for='userPass') Password:
+              label.text-info(for='password') Password:
               br
-              input#password.form-control(type='number' name='userPass')
+              input#password.form-control(type='number' name='password')
             .form-group
               label.text-info(for='remember-me')
                 span
             input.btn.btn-info.btn-md(type='submit' name='submit' value='Login')
             
-          form(action="api/signup" method="post") 
+          form(action="/api/signup" method="post") 
             input.btn.btn-info.btn-md(type='submit' name='submit' value='Singup')
+          form(action="/api/auth/facebook" method="get")
+            input.btn.btn-info.btn-md(type='submit' name='submit' value='Login with Facebook')
+             

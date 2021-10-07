@@ -4,10 +4,9 @@ head
   script(src='//code.jquery.com/jquery-1.11.1.min.js')
   link(rel="stylesheet", href="/css/index.css")
 
-if session=true
-    div.alert.alert-success Bienvenido #{userName}! 
-        form(action="/api/logout" method="GET")
-            button.btn.btn-primary.pull-right Logout 
+div.alert.alert-success Bienvenido #{nombre} #{foto} #{email}! 
+  form(action="/api/logout" method="GET")
+    button.btn.btn-primary.pull-right Logout 
 
 .container
   .col-md-9 

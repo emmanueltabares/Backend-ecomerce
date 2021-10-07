@@ -5,7 +5,7 @@ import apiRouter from '../routes/index';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import MongoStore from 'connect-mongo';
-import passport from 'passport';
+import passport from '../middleware/auth';
 import 'dotenv/config'
 
 const app = express();

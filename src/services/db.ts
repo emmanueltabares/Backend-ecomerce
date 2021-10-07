@@ -3,7 +3,7 @@ import { messageCollection, messageModel, messageSchema } from "../models/messag
 
 export const connectToDB = () => {
 
-    const MONGODB_URI = 'mongodb://localhost:27017/ecommerce';
+    const MONGODB_URI = 'mongodb://localhost:27017/user';
           
     mongoose.connect(MONGODB_URI);
     const db = mongoose.connection;

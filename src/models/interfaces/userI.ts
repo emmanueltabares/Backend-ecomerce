@@ -8,3 +8,18 @@ export interface UserI {
 export interface User {
     _id?: string;
   }
+
+export type Photos = {
+    value: string;
+  };
+  
+export type Emails = {
+    value: string;
+  };
+  
+export interface User extends Express.User {
+    contador?: number;
+    displayName?: string;
+    photos?: Photos[];
+    emails?: Emails[];
+  }
