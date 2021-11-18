@@ -1,0 +1,112 @@
+{"level":"error","message":"HUBO UN ERROR Cannot read property 'passport' of undefined","timestamp":"2021-11-11T21:40:36.537Z"}
+{"level":"error","message":"Server error: Error: listen EADDRINUSE: address already in use :::8080","timestamp":"2021-11-11T21:52:29.327Z"}
+{"level":"error","message":"HUBO UN ERROR Cannot read property 'passport' of undefined","timestamp":"2021-11-11T21:52:47.406Z"}
+{"level":"error","message":"Server error: Error: listen EADDRINUSE: address already in use :::8080","timestamp":"2021-11-11T21:54:47.679Z"}
+{"level":"error","message":"Server error: Error: listen EADDRINUSE: address already in use :::8080","timestamp":"2021-11-11T21:59:53.675Z"}
+{"level":"error","message":"Server error: Error: listen EADDRINUSE: address already in use :::8080","timestamp":"2021-11-11T22:03:27.666Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-11T23:54:57.164Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:12:29.197Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:14:49.615Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:16:07.102Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:17:43.277Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:18:23.156Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:19:23.454Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:21:36.220Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:21:59.357Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:25:36.355Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-12T00:27:10.870Z"}
+{"level":"error","message":"HUBO UN ERROR Cannot read property 'passport' of undefined","timestamp":"2021-11-12T22:53:43.825Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:02:51.038Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:26:16.021Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:28:32.653Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:29:59.311Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:30:53.601Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:30:53.602Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:31:29.061Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:32:17.439Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:32:25.432Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:32:40.392Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:33:34.405Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T02:33:53.962Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T16:10:06.131Z"}
+{"level":"error","message":"Server error: Error: bind EADDRINUSE null:8081","timestamp":"2021-11-13T16:16:18.866Z"}
+{"level":"error","message":"Server error: Error: bind EADDRINUSE null:8081","timestamp":"2021-11-13T16:16:18.897Z"}
+{"level":"error","message":"Server error: Error: bind EADDRINUSE null:8081","timestamp":"2021-11-13T16:16:18.910Z"}
+{"level":"error","message":"Server error: Error: bind EADDRINUSE null:8081","timestamp":"2021-11-13T16:16:19.162Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T16:38:50.578Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T16:39:23.173Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T17:35:45.448Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T17:38:24.661Z"}
+{"level":"error","message":"getaddrinfo ENOTFOUND smtp.gmail.email","timestamp":"2021-11-13T17:38:42.207Z"}
+{"level":"error","message":"getaddrinfo ENOTFOUND smtp.gmail.email","timestamp":"2021-11-13T17:46:33.505Z"}
+{"level":"error","message":"getaddrinfo ENOTFOUND smtp.gmail.email","timestamp":"2021-11-13T17:51:06.673Z"}
+{"level":"error","message":"self signed certificate in certificate chain","timestamp":"2021-11-13T17:52:25.951Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:36:06.894Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:36:12.556Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:37:32.066Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:38:24.051Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:38:49.051Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:39:46.761Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:39:56.447Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:40:00.366Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:40:06.132Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:40:56.760Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:42:38.086Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:46:18.518Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:46:34.374Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-13T19:47:04.261Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:29:41.496Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:30:11.772Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:30:48.670Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:31:35.748Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:39:17.324Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:40:42.286Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:41:48.665Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:42:47.529Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:46:20.524Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:48:07.003Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:50:34.843Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:52:19.300Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:53:32.214Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:55:46.884Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T22:59:27.582Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:03:39.105Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:04:17.227Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:07:11.220Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:07:15.693Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:07:22.161Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:07:24.917Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:07:55.192Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:08:24.667Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:08:35.024Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:12:03.755Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-14T23:12:35.353Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:13:37.485Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:18.283Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:30.659Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:31.813Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:31.976Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:33.861Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:14:57.744Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:15:44.720Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:16:11.261Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:16:13.446Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:16:18.732Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:16:24.562Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:16:28.378Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:19:41.463Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:20:06.737Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:20:06.878Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:20:15.857Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:20:16.448Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:20:16.607Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:24:49.311Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:25:20.729Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:25:47.764Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:25:53.294Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:25:53.479Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:25:54.020Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:34:57.407Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:34:57.417Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:34:57.441Z"}
+{"level":"error","message":"HUBO UN ERROR undefined","timestamp":"2021-11-18T22:34:57.466Z"}
