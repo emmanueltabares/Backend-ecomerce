@@ -1,0 +1,19 @@
+import mongoose, { Connection } from 'mongoose';
+
+mongoose.Promise = global.Promise;
+
+export class MongoDB {
+    private instance: number;
+    private url: string;
+    private connection?: Connection;
+
+    constructor() {
+        this.url = process.env.MONGO_ATLAS_SRV;
+        this.instance = 0;
+    }
+
+    getConnection() {
+        if(!this.connection) this.connection = mongoose.createConnection(this.url);
+        return this.connection;
+    }
+}
